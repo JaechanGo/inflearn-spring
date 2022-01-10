@@ -1,7 +1,6 @@
 package hello.hellospring.service;
 
 import hello.hellospring.domain.Member;
-import hello.hellospring.repository.MemberRepository;
 import hello.hellospring.repository.MemoryMemberRepository;
 import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 
 @SpringBootTest
-@Transactional //현재 실행에서의 데이터 rollback;
+@Transactional
 class MemberServiceIntegrationTest {
 
 
